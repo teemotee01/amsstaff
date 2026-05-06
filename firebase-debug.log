@@ -1,0 +1,96 @@
+[debug] [2026-04-15T04:34:42.673Z] ----------------------------------------------------------------------
+[debug] [2026-04-15T04:34:42.714Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-04-15T04:34:42.716Z] CLI Version:   15.14.0
+[debug] [2026-04-15T04:34:42.717Z] Platform:      win32
+[debug] [2026-04-15T04:34:42.719Z] Node Version:  v24.14.1
+[debug] [2026-04-15T04:34:42.720Z] Time:          Tue Apr 14 2026 23:34:42 GMT-0500 (Colombia Standard Time)
+[debug] [2026-04-15T04:34:42.721Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ACER\Documents\GitHub\AttendanceSystem\armburu
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-04-15T04:35:01.502Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-15T04:35:01.503Z] > authorizing via signed-in user (adamuharami01@gmail.com)
+[debug] [2026-04-15T04:35:01.505Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:01.505Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:01.508Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-04-15T04:35:02.515Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-04-15T04:35:02.515Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Dataconnect Setup
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2026-04-15T04:35:05.065Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:05.065Z] Checked if tokens are valid: true, expires at: 1776230981985
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2026-04-15T04:35:05.066Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:05.067Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:05.067Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-04-15T04:35:05.067Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com  x-goog-user-project=staffattendancearmburu
+[debug] [2026-04-15T04:35:05.070Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com [none]
+[debug] [2026-04-15T04:35:05.070Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com  x-goog-user-project=staffattendancearmburu
+[debug] [2026-04-15T04:35:06.761Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-04-15T04:35:06.761Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2026-04-15T04:35:06.762Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:06.762Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:06.762Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2026-04-15T04:35:06.762Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com:enable  x-goog-user-project=staffattendancearmburu
+[debug] [2026-04-15T04:35:06.774Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com 200
+[debug] [2026-04-15T04:35:06.774Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2026-04-15T04:35:06.774Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:06.774Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:06.775Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com:enable [none]
+[debug] [2026-04-15T04:35:06.775Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com:enable  x-goog-user-project=staffattendancearmburu
+[debug] [2026-04-15T04:35:07.681Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2026-04-15T04:35:07.681Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2026-04-15T04:35:08.336Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com:enable 200
+[debug] [2026-04-15T04:35:08.337Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2026-04-15T04:35:18.356Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:18.356Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:35:18.357Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/staffattendancearmburu/locations/-/services [none]
+[debug] [2026-04-15T04:35:20.378Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/staffattendancearmburu/locations/-/services 200
+[debug] [2026-04-15T04:35:20.379Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/staffattendancearmburu/locations/-/services {}
+[info] i  : ensuring required API cloudaicompanion.googleapis.com is enabled... 
+[debug] [2026-04-15T04:36:01.727Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:01.727Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:01.727Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/cloudaicompanion.googleapis.com [none]
+[debug] [2026-04-15T04:36:01.727Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/cloudaicompanion.googleapis.com  x-goog-user-project=staffattendancearmburu
+[debug] [2026-04-15T04:36:03.332Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/cloudaicompanion.googleapis.com 200
+[debug] [2026-04-15T04:36:03.332Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/staffattendancearmburu/services/cloudaicompanion.googleapis.com [omitted]
+[info] +  : required API cloudaicompanion.googleapis.com is enabled 
+[debug] [2026-04-15T04:36:35.068Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:35.068Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:35.069Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/staffattendancearmburu/billingInfo [none]
+[debug] [2026-04-15T04:36:36.556Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/staffattendancearmburu/billingInfo 200
+[debug] [2026-04-15T04:36:36.556Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/staffattendancearmburu/billingInfo {"name":"projects/staffattendancearmburu/billingInfo","projectId":"staffattendancearmburu","billingAccountName":"","billingEnabled":false}
+[debug] [2026-04-15T04:36:36.581Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:36.581Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:36.587Z] >>> [apiv2][query] GET https://monitoring.googleapis.com/v3/projects/staffattendancearmburu/timeSeries/ filter=metric.type%3D%22serviceruntime.googleapis.com%2Fquota%2Fallocation%2Fusage%22+AND+metric.label.quota_metric+%3D+%22sqladmin.googleapis.com%2Ffdc_lifetime_free_trial_per_project%22&interval.endTime=2026-04-15T04%3A36%3A36.570Z&interval.startTime=2026-04-08T04%3A36%3A36.563Z
+[debug] [2026-04-15T04:36:39.167Z] <<< [apiv2][status] GET https://monitoring.googleapis.com/v3/projects/staffattendancearmburu/timeSeries/ 200
+[debug] [2026-04-15T04:36:39.167Z] <<< [apiv2][body] GET https://monitoring.googleapis.com/v3/projects/staffattendancearmburu/timeSeries/ {"unit":"1"}
+[info] +  dataconnect: CloudSQL no cost trial available! 
+[debug] [2026-04-15T04:36:39.175Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:39.175Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:39.176Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/staffattendancearmburu/instances [none]
+[debug] [2026-04-15T04:36:40.899Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/staffattendancearmburu/instances 200
+[debug] [2026-04-15T04:36:40.900Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/staffattendancearmburu/instances {}
+[debug] [2026-04-15T04:36:40.916Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:40.917Z] Checked if tokens are valid: true, expires at: 1776230981985
+[debug] [2026-04-15T04:36:40.917Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/staffattendancearmburu/locations [none]
+[debug] [2026-04-15T04:36:42.448Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/staffattendancearmburu/locations 200
+[debug] [2026-04-15T04:36:42.449Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/staffattendancearmburu/locations {"locations":[{"name":"projects/staffattendancearmburu/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/staffattendancearmburu/locations/asia-east2","locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/staffattendancearmburu/locations/asia-northeast1","locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/staffattendancearmburu/locations/asia-northeast2","locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/staffattendancearmburu/locations/asia-northeast3","locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/staffattendancearmburu/locations/asia-south1","locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/staffattendancearmburu/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/staffattendancearmburu/locations/asia-southeast2","locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/staffattendancearmburu/locations/australia-southeast1","locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/staffattendancearmburu/locations/australia-southeast2","locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/staffattendancearmburu/locations/europe-central2","locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/staffattendancearmburu/locations/europe-north1","locationId":"europe-north1","displayName":"Finland"},{"name":"projects/staffattendancearmburu/locations/europe-southwest1","locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/staffattendancearmburu/locations/europe-west1","locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/staffattendancearmburu/locations/europe-west2","locationId":"europe-west2","displayName":"London"},{"name":"projects/staffattendancearmburu/locations/europe-west3","locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/staffattendancearmburu/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/staffattendancearmburu/locations/europe-west6","locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/staffattendancearmburu/locations/europe-west8","locationId":"europe-west8","displayName":"Milan"},{"name":"projects/staffattendancearmburu/locations/europe-west9","locationId":"europe-west9","displayName":"Paris"},{"name":"projects/staffattendancearmburu/locations/me-west1","locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/staffattendancearmburu/locations/northamerica-northeast1","locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/staffattendancearmburu/locations/northamerica-northeast2","locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/staffattendancearmburu/locations/southamerica-east1","locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/staffattendancearmburu/locations/southamerica-west1","locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/staffattendancearmburu/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/staffattendancearmburu/locations/us-east1","locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/staffattendancearmburu/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/staffattendancearmburu/locations/us-south1","locationId":"us-south1","displayName":"Dallas"},{"name":"projects/staffattendancearmburu/locations/us-west1","locationId":"us-west1","displayName":"Oregon"},{"name":"projects/staffattendancearmburu/locations/us-west2","locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/staffattendancearmburu/locations/us-west3","locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/staffattendancearmburu/locations/us-west4","locationId":"us-west4","displayName":"Las Vegas"}]}

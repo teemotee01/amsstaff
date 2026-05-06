@@ -1,0 +1,162 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+/* LAYOUT */
+.enterprise-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.sidebar.closed {
+  width: 80px;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background: #334155;
+}
+
+.logout {
+  margin-top: auto;
+  background: #dc2626 !important;
+}
+
+.toggle {
+  background: #2563eb !important;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.live {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+  color: #6b7280;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* TABLE */
+.table {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* LOGIN */
+.login {
+  width: 340px;
+  margin: 120px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* LOADING */
+.loading {
+  padding: 60px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+  }
+}
